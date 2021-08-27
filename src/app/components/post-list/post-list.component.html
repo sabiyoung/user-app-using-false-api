@@ -1,0 +1,10 @@
+<div>
+  <h3>Posts</h3>
+  <ul>
+    <li *ngFor="let post of posts">
+   {{post.body}}
+ <app-user-by-id [userId]="post.userId"></app-user-by-id>
+
+    </li>
+  </ul>
+</div>

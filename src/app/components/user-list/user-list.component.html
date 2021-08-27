@@ -1,0 +1,12 @@
+<div class="container">
+  <input type="text" [(ngModel)]="searchTerm">
+  <h3>Users</h3>
+  <ul>
+    <li *ngFor="let user of users">
+<b>Name </b>  {{user.username}}
+ <app-post-by-id [userId]="user.id"></app-post-by-id>
+ <app-photo-by-id  [photoId]="user.id"></app-photo-by-id>
+    </li>
+  </ul>
+
+</div>
